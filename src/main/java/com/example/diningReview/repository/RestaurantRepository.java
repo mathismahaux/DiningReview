@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface RestaurantRepository extends JpaRepository<Restaurant, Long> {
     boolean existsByNameAndAddress(String name, String address);
-    List<Restaurant> findByAddressAndPeanutScoreNotNullOrEggScoreNotNullOrDairyScoreNotNullOrderByOverallScoreDesc(String address);
+    List<Restaurant> findByZipcodeAndPeanutScoreNotNullOrderByOverallScoreDesc(String zipcode);
+    List<Restaurant> findByZipcodeAndEggScoreNotNullOrderByOverallScoreDesc(String zipcode);
+    List<Restaurant> findByZipcodeAndDairyScoreNotNullOrderByOverallScoreDesc(String zipcode);
 }

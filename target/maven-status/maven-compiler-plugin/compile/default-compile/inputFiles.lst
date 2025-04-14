@@ -1,4 +1,11 @@
 /Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/DiningReviewApplication.java
 /Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/controller/HelloController.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/controller/RestaurantController.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/model/AdminReviewAction.java
 /Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/model/DiningReview.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/model/DiningReviewStatus.java
 /Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/model/Restaurant.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/model/User.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/repository/DiningReviewRepository.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/repository/RestaurantRepository.java
+/Users/mathismahaux/Projects/Java/Personal/Spring/diningReview/src/main/java/com/example/diningReview/repository/UserRepository.java
