@@ -18,7 +18,6 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    // Create a new user
     @PostMapping
     public ResponseEntity<?> createUser(@RequestBody User user) {
         if (userRepository.existsByDisplayName(user.getDisplayName())) {
@@ -28,7 +27,6 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
     }
 
-    // Update an existing user (except display name)
     @PutMapping("/{displayName}")
     public ResponseEntity<?> updateUser(@PathVariable String displayName, @RequestBody User updatedUser) {
         Optional<User> existingUser = userRepository.findByDisplayName(displayName);
@@ -48,7 +46,6 @@ public class UserController {
         return ResponseEntity.ok(savedUser);
     }
 
-    // Fetch a user profile by display name
     @GetMapping("/{displayName}")
     public ResponseEntity<?> getUser(@PathVariable String displayName) {
         Optional<User> user = userRepository.findByDisplayName(displayName);
